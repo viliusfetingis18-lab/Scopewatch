@@ -48,7 +48,7 @@ An Anthropic API key
 
 ### Setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/scopewatch.git
+git clone https://github.com/viliusfetingis18-lab/scopewatch.git
 cd scopewatch
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY="your-key-here"
