@@ -16,7 +16,7 @@ A client asks for something. This checks it against the SOW and tells you, with 
 Client Email: "Can you build a real-time dashboard?"
            ↓
 AUDIT      → Out of scope, not listed in SOW Section 4.1
-RECOVER    → $33K revenue at risk if delivered for free
+RECOVER    → £33K revenue at risk if delivered for free
 UPSELL     → Drafts a change-request email you can review and send
 CLAUSE     → Cites the SOW section that backs up the scope boundary
 BENCH      → Flags the resources and effort days needed to deliver it
