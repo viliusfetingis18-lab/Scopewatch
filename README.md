@@ -43,7 +43,7 @@ Claude reads the function definitions in `skill.md` and follows them when you as
 | Function | What it does | Example input | Example output |
 |----------|--------------|----------------|-----------------|
 | **audit** | Checks a request against the SOW | "Can we add a mobile app?" | OUT_OF_SCOPE, 95% confidence |
-| **recover** | Calculates financial exposure | Scope item + hourly rates | Lost revenue: $33K |
+| **recover** | Calculates financial exposure | Scope item + hourly rates | Lost revenue: £33K |
 | **upsell** | Drafts a change-request email | Client tier + tone | Ready-to-review email |
 | **clause** | Pulls contract language to back up scope boundaries | "Change Control", AICPA | "Per SOW Section 4.2..." |
 | **bench** | Flags resources and effort needed | Work description | Sr. Engineer (12d), DevOps (4d) |
