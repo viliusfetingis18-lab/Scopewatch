@@ -137,6 +137,11 @@ Calculates lost revenue exposure if out-of-scope work is performed without forma
 {
   "type": "object",
   "properties": {
+    "currency": {
+      "type": "string",
+      "default": "GBP",
+      "description": "The currency code or symbol for financial output (e.g., GBP, £, EUR, USD)"
+    },
     "scope_item": {
       "type": "string",
       "description": "Description of the requested work"
@@ -220,7 +225,7 @@ Calculates lost revenue exposure if out-of-scope work is performed without forma
     "estimated_effort_days": 15,
     "billable_rate_avg": 275,
     "lost_revenue_if_free": 33000,
-    "margin_impact": "-$11,550 (35% margin loss)",
+    "margin_impact": "-£11,550 (35% margin loss)",
     "schedule_impact_days": 10
   },
   "cost_of_delivery": {
@@ -307,7 +312,7 @@ Generates a strategically framed, tone-perfect change request response that posi
 ```json
 {
   "email_subject": "RE: Real-Time Inventory Dashboard – Enhancement Proposal",
-  "email_body": "Hi [Client Name],\n\nThank you for raising this during our review call. We love your thinking on real-time inventory visibility—it's a powerful addition to the core delivery.\n\nOur Statement of Work (SOW, Section 4.1) covers the foundational reporting suite through Q3. The real-time dashboard sits in the enhancement tier, and we want to ensure we can deliver it with the quality and support you deserve.\n\nHere's how we recommend moving forward:\n\nWe can scope this as a Formal Change Request (typically 2–3 weeks to amendment approval):\n- Scope: Real-time inventory dashboard with alerts, API integration\n- Estimated Effort: 15 engineering days + 4 DevOps days\n- Investment: $33,000 (inclusive of 12-month support tier)\n- Timeline: Delivery by [Date], post-amendment execution\n\nWhy the formal route?\n- Ensures your project has the dedicated senior talent (not context-switching from core delivery)\n- Protects both teams' capacity planning\n- Establishes clear SLAs and support boundaries\n- Enables us to resource this optimally\n\nNext Steps:\nI'll connect you with [Commercial Lead Name] to finalize the Change Request by [Date]. Once approved, you'll have full visibility into resource allocation and delivery milestones.\n\nIn the meantime, we can discuss interim reporting options that fit within scope—no obligation.\n\nLooking forward to expanding this partnership.\n\nBest regards,\n[Your Name]",
+  "email_body": "Hi [Client Name],\n\nThank you for raising this during our review call. We love your thinking on real-time inventory visibility—it's a powerful addition to the core delivery.\n\nOur Statement of Work (SOW, Section 4.1) covers the foundational reporting suite through Q3. The real-time dashboard sits in the enhancement tier, and we want to ensure we can deliver it with the quality and support you deserve.\n\nHere's how we recommend moving forward:\n\nWe can scope this as a Formal Change Request (typically 2–3 weeks to amendment approval):\n- Scope: Real-time inventory dashboard with alerts, API integration\n- Estimated Effort: 15 engineering days + 4 DevOps days\n- Investment: £33,000 (inclusive of 12-month support tier)\n- Timeline: Delivery by [Date], post-amendment execution\n\nWhy the formal route?\n- Ensures your project has the dedicated senior talent (not context-switching from core delivery)\n- Protects both teams' capacity planning\n- Establishes clear SLAs and support boundaries\n- Enables us to resource this optimally\n\nNext Steps:\nI'll connect you with [Commercial Lead Name] to finalize the Change Request by [Date]. Once approved, you'll have full visibility into resource allocation and delivery milestones.\n\nIn the meantime, we can discuss interim reporting options that fit within scope—no obligation.\n\nLooking forward to expanding this partnership.\n\nBest regards,\n[Your Name]",
   "key_positioning": [
     "Enhancement positions as premium add-on",
     "Formal process frames as mutual protection",
@@ -548,6 +553,11 @@ Generates executive-ready commercial health matrix showing Total Contract Value 
 {
   "type": "object",
   "properties": {
+    "currency": {
+      "type": "string",
+      "default": "GBP",
+      "description": "The currency code or symbol for the executive dashboard layout (e.g., GBP, £, EUR, USD)"
+    },
     "project_id": {
       "type": "string",
       "description": "Project identifier"
@@ -695,7 +705,7 @@ Generates executive-ready commercial health matrix showing Total Contract Value 
     "projected_tcv": 583200,
     "improvement_percentage": 8.5
   },
-  "formatted_dashboard": "ACME-2026-Q2 | QTD\nTCV: $537.5K -> $583.2K (+8.5%)\nAt-Risk: $45.7K across 3 pending requests\nTop priority: Real-Time Dashboard ($33K, HIGH, 12 days pending)"
+  "formatted_dashboard": "ACME-2026-Q2 | QTD\nTCV: £537.5K -> £583.2K (+8.5%)\nAt-Risk: £45.7K across 3 pending requests\nTop priority: Real-Time Dashboard (£33K, HIGH, 12 days pending)"
 }
 ```
 
