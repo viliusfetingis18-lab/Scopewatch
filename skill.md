@@ -1,16 +1,8 @@
-# Commercial Scope & Revenue Recovery Agent
-
-**Skill Definition for Anthropic Agent Skills Protocol**
-
 ---
-
-## Skill Metadata
-
-```yaml
-name: commercial-scope-revenue-agent
+name: ScopeWatch
 version: 1.0.0
+description: AI skill for detecting revenue leakage, quantifying commercial exposure, and strategically recovering out-of-scope work in professional services organizations.
 author: Vilius Fetingis
-description: AI skill for detecting revenue leakage, quantifying commercial exposure, and strategically recovering out-of-scope work in professional services organizations
 target_platforms:
   - Professional services and consulting organizations
   - Engagement and project management teams
@@ -21,9 +13,12 @@ use_cases:
   - Contract clause referencing
   - Resource gap analysis
   - Commercial health dashboarding
-```
-
 ---
+
+# ScopeWatch: Commercial Scope & Revenue Recovery Agent
+
+**Skill Definition for Anthropic Agent Skills Protocol**
+
 
 ## Function 1: `/audit`
 
