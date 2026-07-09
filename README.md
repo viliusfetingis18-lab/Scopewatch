@@ -5,7 +5,7 @@ A Claude Agent Skill that audits client requests against a signed Statement of W
 
 **Built for:** aspiring and practicing PMs, Engagement Managers, Commercial Leads
 **Works with:** Claude.ai Projects
-
+**Scope note:** built around software/digital professional services delivery. The rate matrix and role fields (senior engineer, DevOps, QA) would need adapting for other industries such as construction.
 ---
 
 ## What It Does
@@ -64,7 +64,7 @@ dashboard for inventory tracking?" Tell me if it's in scope or out.
 **Calculate impact:**
 ```
 What's the revenue at risk if we build the dashboard for free?
-Senior engineer at $350/hr, DevOps at $300/hr, QA at $200/hr.
+Senior engineer at £350/hr, DevOps at £300/hr, QA at £200/hr.
 Target margin is 35%.
 ```
 
@@ -81,12 +81,12 @@ Client: Acme Corp (Platinum tier). Tone: Trusted Advisor.
 - `skill.md` — full function definitions, upload this to a Claude Project
 - `README.md` — this file
 - `LICENSE` — MIT
-
+- `demo/demo-walkthrough.md` — worked example running all six functions against a fictional project
 ---
 
 ## How This Was Built
 
-Designed the function specs and scope logic myself, using Claude to help draft and refine the skill definition, while studying PMI Agile and GitHub Foundations. This is a PM-driven use of AI tooling to spec a solution to a real commercial problem: detecting revenue leakage from scope creep in professional services delivery.
+Designed the function specs and scope logic myself, using Claude/Copilot to help draft and refine the skill definition, while studying PMI Agile and GitHub Foundations. This is a PM-driven use of AI tooling to spec a solution to a real commercial problem: detecting revenue leakage from scope creep in professional services delivery.
 
 ---
 
@@ -99,5 +99,3 @@ MIT
 **Author:** Vilius Fetingis
 
 ---
-
-**Author:** Vilius Fetingis
