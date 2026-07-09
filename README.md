@@ -51,6 +51,34 @@ Claude reads the function definitions in `skill.md` and follows them when you as
 
 Full input/output schemas for each function are in `skill.md`.
 
+## Known Limitations
+
+I stress-tested ScopeWatch across multiple fresh sessions with identical
+and edge-case inputs before treating it as reliable. Findings:
+
+**Fabrication safety — passed.** With no SOW provided at all, the skill
+correctly refused to run the audit rather than inventing a scope
+determination or a fake SOW reference, citing its own error-handling
+rule that sparse or missing input should return low confidence, not a
+guess.
+
+**Judgment quality — solid.** Across genuinely ambiguous inputs, the
+skill correctly identified hidden technical dependencies a less careful
+reviewer might miss (e.g. flagging that a "simple" dashboard trend line
+actually requires a historical data layer that may not exist yet).
+
+**Confidence calibration — tracks case clarity.** Confidence scores were
+lower and more variable (0.40-0.55) on genuinely ambiguous scope
+questions, and higher and more stable (0.85) on inputs with a clear
+technical basis for the determination. This is the expected pattern for
+a well-calibrated tool, not noise.
+
+**Output format — inconsistent.** Running the identical input in
+separate fresh sessions sometimes returned the full JSON schema defined
+in `skill.md`, and sometimes returned free-form commentary with no
+structured fields at all. Treat outputs as decision support that a
+human reviews, not as something you'd pipe directly into another system
+without checking the format first.
 ---
 
 ## Sample Prompts
